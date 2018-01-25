@@ -22,7 +22,7 @@
 <script>
     var myVar;
     function myFunction() {
-        myVar = setTimeout(showPage, 3000);
+        myVar = setTimeout(showPage, 1000);
     }
     function showPage() {
         document.getElementById("loader").classList.add("loader__disappear");
@@ -178,21 +178,15 @@
                 <div class="contact">
                     <div class="form__content">
                         <form action="https://formspree.io/nsschbihi@gmail.com" class="form" method="POST">
-                            <div class="form__group">
-                                <input type="text" class="form__input" placeholder="Name" id="name" required>
-                                <label for="name" class="form__label">Name</label>
-                            </div>
-                            <div class="form__group">
-                                <input type="email" class="form__input" placeholder="Email" id="email" required>
-                                <label for="email" class="form__label">Email</label>
-                            </div>
-                            <div class="form__group">
-                                <textarea name="text" class="form__textarea" placeholder="Message" id="message"></textarea>
-                            </div>
-                            <div class="form__group u-center-text u-margin-top-medium">
-                                <input type="submit" value="Send" class="button__primary button__white"/>
-                            </div>
-                        </form>
+
+                            <input type="text" class="form__input" placeholder="Name" id="name" required>
+
+                            <input type="email" class="form__input" placeholder="Email" id="email" required>
+
+                            <textarea name="text" class="form__textarea" placeholder="Message" id="message"></textarea>
+     
+                            <input type="submit" value="Send" class="button__primary button__white"/>
+                    </form>
                     </div>
                 </div>
             </div>
