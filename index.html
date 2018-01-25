@@ -1,177 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Youness CHBIHI</title>
-        <link rel="stylesheet" href="styles.css"/>
-    </head>
-    <body>
-        <!-- Navigation Bar -->
-        <header>
-            <nav>
-                <ul>
-                    <li><a class="scroll" href="#about">About</a></li>
-                    <li><a class="scroll" href="#scroll-education">Education</a></li> 
-                    <li><a class="scroll" href="#scroll-portfolio">Portfolio</a></li>
-                    <li><a class="scroll" href="#scroll-contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <!-- Portfolio -->
-        <article>
-            <section id="about">
-                <div class="container-1">
-                    <div class="block">
-                        <div class="text-padding">
-                            Hi there, <br/> I'm Youness CHBIHI, <br/> a <span></span> years old <br/> Civil Engineer <br/>and Front-End developer.
-                        </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/icon.ico">
+    
+
+    <title>Youness CHBIHI</title>
+</head>
+<div class="loader" id="loader">
+    <svg class="loader__svg--below" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 175.1 175.1">
+        <path d="M163.7 46.4V15.3l-27-15.6-50.3 29 1.3 2.2-1.3-2.2-20.9 12V15.3L38.5-.3l-27 15.6v59.6l46.6 26.9L36 114.5v31.2l51.6 29.8 51.6-29.8v-31.2l-24.6-14.3V74.7l49.1-28.3zM88.8 33l47.9-27.6 19.5 11.3-68.6 39.6L68.1 45l20.7-12zM60.5 21.1v22.5L41 54.9V32.2l19.5-11.1zm.1 28.2v19.8l-17.1-9.9 17.1-9.9zm-2.5-32.6L38.5 27.9 19 16.7 38.5 5.4l19.6 11.3zm2.5 89.3v19.7l-17.1-9.8 17.1-9.9zM41 120.2l24.6 14.1v-34L16.5 72V21L36 32.2v28.4l29.6 17.1V49.3l19.5 11.3v107.6L41 142.8v-22.6zm49.1 48.1V60.6L158.7 21v22.5l-49.1 28.3v62.5l24.6-14.3v22.7l-44.1 25.6zm41.5-52.5l-17 9.9V106l17 9.8z"/>
+    </svg>
+    <svg class="loader__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 175.1 175.1">
+        <path d="M163.7 46.4V15.3l-27-15.6-50.3 29 1.3 2.2-1.3-2.2-20.9 12V15.3L38.5-.3l-27 15.6v59.6l46.6 26.9L36 114.5v31.2l51.6 29.8 51.6-29.8v-31.2l-24.6-14.3V74.7l49.1-28.3zM88.8 33l47.9-27.6 19.5 11.3-68.6 39.6L68.1 45l20.7-12zM60.5 21.1v22.5L41 54.9V32.2l19.5-11.1zm.1 28.2v19.8l-17.1-9.9 17.1-9.9zm-2.5-32.6L38.5 27.9 19 16.7 38.5 5.4l19.6 11.3zm2.5 89.3v19.7l-17.1-9.8 17.1-9.9zM41 120.2l24.6 14.1v-34L16.5 72V21L36 32.2v28.4l29.6 17.1V49.3l19.5 11.3v107.6L41 142.8v-22.6zm49.1 48.1V60.6L158.7 21v22.5l-49.1 28.3v62.5l24.6-14.3v22.7l-44.1 25.6zm41.5-52.5l-17 9.9V106l17 9.8z"/>
+    </svg>
+</div>
+<script>
+    var myVar;
+    function myFunction() {
+        myVar = setTimeout(showPage, 4000);
+    }
+    function showPage() {
+        document.getElementById("loader").classList.add("loader__disappear");
+    }
+</script>
+<body onload="myFunction()">
+    <header class="header">
+        <div class="header__circle header__circle--1"></div>
+        <div class="header__circle header__circle--2"></div>
+        <div class="header__circle header__circle--3"></div>
+        <div class="header__circle header__circle--4"></div>
+        <div class="header__logo-box">
+            <img src="img/logo-white.png" alt="my logo" class="header__logo" title="YC">
+        </div>
+        <div class="header__shape">
+            <span class="header__shape--hover"></span>
+            <img src="img/photo.jpg" alt="Photo of myself" class="header__photo" title="Hello there :)">
+        </div>
+        <div class="header__name">
+            Youness CHBIHI
+        </div>
+        <div class="header__intro-text">
+            Hi there and welcome to my website :)
+        </div>
+        <div class="header__scroll">
+            <div class="header__scroll--dot">
+
+            </div>
+        </div> 
+    </header>
+    <main>
+        <section class="section__about">
+            <div class="u-center-text u-margin-bottom-small">
+                <h2 class="heading__section">
+                    About
+                </h2>
+            </div>
+            <div class="row">
+                <div class="col-1-of-2">
+                    <div class="bab-mansour">
+                        <img class="bab-mansour__svg bab-mansour__respond" src="img/holder.png">
+                        <p class="bab-mansour__text">
+                            Welcome to my personal website, I'm a civil engineer who is trying to find his first job, so in the meantime I've become a learning machine, I'm
+                            sharing with you some of my projects and courses, feel free to visit them all, and if you ever happen to be a recruiter 
+                            you can find my CV and my contacts down below. Here is a little sketch of Bab Mansour from my hometown Meknes. Enjoy your visit here :) 
+                        </p>
                     </div>
-                    <div class="block-photo">
-                        <div class="crop">
-                            <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAIA_wDGAAAAAQAAAAAAAAovAAAAJGJkNGM5MDQ1LTAwYTEtNDBlYi1hYWRiLTM3ZmM5OTQzNzViOQ.jpg" alt="A picture of myself."/>
-                            <div class="name">CHBIHI Youness</div>
-                        </div>
-                    </div>
-                    <div class="block-morocco">
-                            <svg width="100%" viewBox="0 0 872.71672 872.71672">
-                                    <path class="morocco-1" 
-                                    d="m 805.57638,223.19027 -20.7513,77.44492 -49.09812,28.34681 -82.22484,-83.45577 -196.39247,113.38724 -113.38724,-196.39246 -112.93669,31.1624 -28.34681,-49.09812 20.75131,-77.444922 77.44492,20.751305 28.34681,49.098117 -83.45577,82.22484 113.38724,196.39246 -196.39246,113.38724 31.1624,112.93669 -49.09812,28.34681 -77.444919,-20.7513"
-                                    />
-                                    <path class="morocco-1" 
-                                    d="m 67.140301,649.52649 20.7513,-77.44492 49.098119,-28.34681 82.22484,83.45577 196.39246,-113.38724 113.38724,196.39246 112.9367,-31.16239 28.34681,49.09811 -20.75131,77.44492 -77.44492,-20.7513 -28.34682,-49.09811 83.45578,-82.22485 -113.38725,-196.39246 196.39247,-113.38724 -31.1624,-112.93669 49.09812,-28.34682 77.44492,20.75131"
-                                    />
-                                    <path class="morocco-2" 
-                                    d="m 649.52653,67.140336 20.7513,77.444914 -28.3469,49.09816 -112.9366,-31.16242 -113.3873,196.39248 -196.39242,-113.38726 -82.22484,83.45578 -49.098114,-28.34682 -20.7513,-77.44492 77.444914,-20.7513 49.09812,28.34681 -31.1624,112.93668 196.39244,113.38725 -113.38722,196.39245 83.45578,82.22485 -28.34682,49.09811 -77.44492,20.75131"
-                                    />
-                                    <path class="morocco-2" 
-                                    d="m 223.19022,805.57639 -20.75131,-77.44492 28.34681,-49.09812 112.93671,31.1624 113.3872,-196.39246 196.3924,113.38726 82.2249,-83.45577 49.0982,28.34676 20.7512,77.44497 -77.4449,20.7513 -49.0981,-28.34682 31.1624,-112.9367 -196.3925,-113.38721 113.3873,-196.39248 -83.4558,-82.22485 28.3468,-49.098111 77.4449,-20.751288"
-                                    />
-                                    <path class="morocco-3" 
-                                    d="m 436.35836,10.022117 56.69362,56.693618 V 123.40936 L 379.66474,152.89028 V 379.66476 H 152.89026 L 123.40934,493.052 H 66.71572 L 10.0221,436.35838 66.71572,379.66476 h 56.69362 L 152.89026,493.052 h 226.77448 v 226.77448 l 113.38724,29.48092 v 56.69362 l -56.69362,56.69362"
-                                    />
-                                    <path class="morocco-3" 
-                                    d="M 436.35832,862.69464 379.6647,806.00102 V 749.3074 L 493.05194,719.82648 V 493.052 h 226.77448 l 29.48092,-113.38724 h 56.69362 l 56.69362,56.69362 -56.69362,56.69362 H 749.30734 L 719.82642,379.66476 H 493.05194 V 152.89028 L 379.6647,123.40936 V 66.715735 l 56.69362,-56.693618"
-                                    />
-                                    <path class="morocco" 
-                                    d="m 223.19022,67.139648 122.92688,32.43298 90.24124,-89.55051 v 0 l 90.24124,89.55051 122.92688,-32.43298 33.37593,122.674682 122.67468,33.37593 -32.43298,122.92688 89.55051,90.24124 -89.55051,90.24124 L 805.57707,649.5265 682.90239,682.90243 649.52646,805.57711 526.59958,773.14413 436.35834,862.69464 346.1171,773.14413 223.19022,805.57711 189.81429,682.90243 67.139609,649.5265 99.572589,526.59962 10.022079,436.35838 99.572589,346.11714 67.139609,223.19026 189.81429,189.81433 Z"
-                                    />
-                            </svg>
-                            </div>
                 </div>
-            </section>
-            
-            <section id="education">
-                <div class="container">
-                    <div id="scroll-education"></div>
-                    <div id="edu-container">
-                        <h1>Education</h1>
-                    <div id="logo-emi" class="block-logo-1">
-                        <svg width="46%" height="46%" viewBox="0 0 195 120" preserveAspectRatio="none">
-                            <g transform="matrix(2,0,0,-2,0,120)">
-                                <path class="mo noir" id="monb"
-                                d="M 10.3046,17.65384 H 48.75562 h 5.89833 L 71.43271,46.6805 85.28288,22.75613 H 69.39981 l 2.94916,5.10233 H 66.45064 L 60.55229,17.65384 H 94.1098 L 71.43271,56.88512 L 51.7048,22.75613 H13.15378 L 10.2046,17.65384  Z"
-                                />
-                                <path class="blanc" id="white1"
-                                d="m 29.44634,8.42692 l 16.77876,29.02666 h 22 L 50.34767,8.42692 L 28.44634,8.42692 Z" />
-                                <path class="mo bleu" id="mob"
-                                d="M 5.2023,8.82692 H 38.551 h 5.89833 L 61.22809,37.85358 75.07826,13.92921 H 59.19519 l 2.94917,5.10231 H 56.24602 L 50.34767,8.82692 H 83.90518 L 61.22809,48.05818 L 41.50017,13.92921 H8.05147 L 5.1023,8.82692 Z"
-                                />
-                                <path class="blanc" id="white2"
-                                d="M 28.84634,8.42692 l 2.94917,5.10229 l 2.94917,5.10229 l 2.94917,5.10229 l 2.94917,5.10229 H 56.9218 L 45.14304,8.42692 L 28.44634,8.42692 Z"
-                                />
-                                <path class="mo noir" id="mona"
-                                d="M0.5,0 H 28.34636 H 34.2447 L 51.02345,29.02666 64.87363,5.1023 H 48.99055 l 2.94918,5.1023 H 46.04138 L 40.14304,0 h 33.55751 l -22.6771,39.23126 L 31.29553,5.1023 H 3.14916 l -2.94916,-5.1023 Z"
-                                />
-                            </g>        
-                        </svg>
-                        <p class="appear">
-                            Mohammadia School of Engineering
-                            </p>
-                        <p class="appear">
-                            Civil Engineering Degree
-                        </p>
+                <div class="col-1-of-2">
+                    <div class="bab-mansour">
+                        
+                        <img class="bab-mansour__svg" src="img/babmansour.gif" alt="bab-mansour">
                     </div>
-                    <div id="logo-sep" class="block-logo-sep">
-                        <div class="separator"></div>
-                    </div> 
-                    <div id="logo-enpc" class="block-logo-2">
-                        <svg width="33%" height="33%" viewBox="0 0 158.11 137" preserveAspectRatio="none">
-                            <g transform="translate(-58.955366,-60.982636)">
-                                <path class="line-1"
-                                    d="M 67,194.57457 64.686302,194.57457 138.06419,67.592875 211.44069,194.57457 Z"/>
-                                <path class="line-2"
-                                    d="m 100.71189,131.06138 h 74.70353 l -37.36125,64.47583 z" />
-                                <path class="line-3"
-                                    d="m 156.92605,163.81875 h 38.4363 L 176.131,194.52101 Z"/>
-                                <path class="line-3"
-                                    d="m 81.98619,163.81875 h 38.4363 l -19.23135,30.70226 z"/>
-                                <path class="line-3"
-                                    d="m 118.84565,100.82312 38.43629,1e-5 -19.23135,30.70225 z"/>
-                            </g>
-                        </svg>
-                        <p class="appear">
-                            Ecole des Ponts ParisTech
-                        </p>
-                        <p class="appear">
-                            MSc Degree in Mechanics of Soils, Rocks and Structures in their Environment
-                        </p>
-                    </div>
-                    <br/>
-                    <a class="button" href="https://drive.google.com/file/d/0Byqe42mw91Hid1hQTnRtRE41MEk/view?usp=sharing" >Download CV</a>
                 </div>
             </div>
-            </section>
-            <section id="portfolio">
-                <div class="container">
-                    <div id="scroll-portfolio"></div>
-                    <div id="port-container">
-                    <h1>Portfolio</h1>
-                    <div class="block-3">
-                        <div class="card">
-                            <img src="projet1.png" alt="Bridge Piles Modeling"/>    
-                            <div class="card-title">Bridge Piles Modeling</div>
-                        </div>
-                    </div>
-                    <div class="block-3">
-                        <div class="card">
-                            <img src="projet2.png" alt="Laterally loaded piles"/>    
-                            <div class="card-title">Laterally loaded piles</div>
-                        </div>
-                    </div>
-                    <div class="block-3">
-                        <div class="card">
-                            <img src="projet3.png" alt="Maths and Physics courses"/>    
-                            <div class="card-title">Maths and Physics courses</div>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            </section>
-            <section id="contact">
-                <div class="container">
-                    <div id="scroll-contact"></div>
-                    <div id="cont-container">
-                        <h1>Contact</h1>
+            
                      
-                    <form action="https://formspree.io/nsschbihi@gmail.com" method="POST">
-
-                        <input name="name" type="text" placeholder="Name" id="name" required/>
-
-                        <input name="email" type="email" placeholder="Email" id="email" required/>
-
-                        <textarea name="text" placeholder="Message" id="message"></textarea>
-
-                        <input type="submit" value="Send" class="button"/>
-                    </form>
+        </section>
+        <section class="section__projects" id="section-projects">
+            <div class=" u-margin-bottom-medium u-center-text">
+                <h2 class="heading__section">
+                    Projects
+                </h2>
+            </div>
+            <p class="paragraph__intro u-margin-bottom-medium u-center-text">
+                In this section, you can find some of my projects. (You may have to hover or click on the pictures below to see more about each project)
+            </p>
+            <div class="row u-margin-bottom-big">
+                <div class="col-1-of-3">
+                    <div class="project-box">
+                        <img src="img/olympiade.gif" alt="Project 1" class="project-box__img">
+                        <span class="project-box__shade"></span>
+                        <div class="project-box__title">Math Olympiad</div>
+                        <a target="_blank" href="pdf/olympiade.pdf" class="project-box__button">View PDF</a>
+                    </div>
                 </div>
+                <div class="col-1-of-3">
+                    <div class="project-box">
+                        <img src="img/cours.png" alt="Project 1" class="project-box__img">
+                        <span class="project-box__shade"></span>
+                        <div class="project-box__title">Civil Engineering Courses</div>
+                        <a href="#popup-cours" class="project-box__button">View more</a>
+                    </div>
                 </div>
-            </section>
-        </article>
-        <p id="footer">
-                CHBIHI Youness © 2017. All Rights Reserved.
-        </p>
-        <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>        
-        <script src="scripts.js"></script>
-    </body>
+                <div class="col-1-of-3">
+                    <div class="project-box">
+                        <img src="img/place-holder.png" alt="Project 1" class="project-box__img">
+                        <span class="project-box__shade"></span>
+                        <div class="project-box__title">Upcoming...</div>
+                        <a href="#section-projects" class="project-box__button">Expect more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section__education">
+            <div class="u-center-text u-margin-bottom-medium">
+                <h2 class="heading__section">
+                    Skills & Education
+                </h2>
+            </div>
+            <div class="row">
+                <div class="col-1-of-2">
+                    <div class="round-logo">
+                        <svg class="logo-emi" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620.4 420">
+                            <path class="logo-emi__dark--1" d="M66.8 253.2h293L470.6 65.9l91.5 154.4H457.2l19.5-32.9h-39l-39 65.9h221.7L470.6 0 340.3 220.3H85.6l-19.5 32.9h.7z"/>
+                            <path class="logo-emi__white" d="M193.2 312.8L304 125.4h145.3l-118 187.4H186.6h6.6z"/>
+                            <path class="logo-emi__light" d="M33 310.2h259.3l110.8-187.4 91.5 154.4H389.7l19.5-32.9h-39l-39 65.9H553L403.2 57 272.8 277.3h-221l-19.5 32.9h.7z"/>
+                            <path class="logo-emi__white" d="M189.3 312.8l19.5-32.9 19.5-32.9 19.5-32.9 19.5-32.9h107.5L297 312.9H186.6l2.7-.1z"/>
+                            <path class="logo-emi__dark--2" d="M2 367.2h222.9l110.9-187.4 91.5 154.4h-105l19.5-32.9h-39l-39 65.9h221.7L335.8 113.9 205.4 334.2H19.5L0 367.2h2z"/>
+                        </svg>
+                    </div>
+                    <p class="paragraph__education">
+                        Mohammadia School of Engineering
+                    </p>
+                    <p class="paragraph__education">
+                        Civil Engineering Degree
+                    </p>
+                </div>
+                <div class="col-1-of-2">
+                    <div class="round-logo">
+                        <svg class="logo-enpc" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600.1 520.6">
+                            <path class="logo-enpc__big"  d="M163.1 266.4L24.3 504.2l551.6 2.3L302.3 28 163.1 266.4z"/>
+                            <path class="logo-enpc__medium" d="M300 510.3l142.8-244.7-283.4-1.2z"/>
+                            <path class="logo-enpc__small" d="M437 500.1l64.5-110.4-127.9-.6zM160.4 499.9l64.5-110.4-127.9-.6zM301.1 257.8l64.5-110.4-127.9-.6z"/>
+                        </svg>
+                    </div>
+                    <p class="paragraph__education">
+                        Ecole des Ponts ParisTech
+                    </p>
+                    <p class="paragraph__education">
+                        MSc Degree in Mechanics of Soils, Rocks and Structures in their Environment     
+                    </p>
+                </div>
+            </div>
+            <div class="row u-center-text">
+                <p class="paragraph__intro u-margin-bottom-small">
+                    If you happen to be a recruiter, feel free to check out my CV (French version).
+                </p>
+                <a target="_blank" href="pdf/CV_CHBIHI_Youness.pdf" class="button__primary">Download CV</a>
+            </div>
+            
+        </section>
+        <section class="section__contact">
+            <div class="u-center-text">
+                <h2 class="heading__section u-margin-bottom-medium">
+                    Contact
+                </h2>
+            </div>
+            <p class="paragraph__intro u-center-text u-margin-bottom-medium">
+                If you have any comment or just want to say hello, feel free to contact me via this form, I'll be pleased to read your messages right away.  
+            </p>
+            <div class="row">
+                <div class="contact">
+                    <div class="form__content">
+                        <form action="https://formspree.io/nsschbihi@gmail.com" class="form" method="POST">
+                            <div class="form__group">
+                                <input type="text" class="form__input" placeholder="Name" id="name" required>
+                                <label for="name" class="form__label">Name</label>
+                            </div>
+                            <div class="form__group">
+                                <input type="email" class="form__input" placeholder="Email" id="email" required>
+                                <label for="email" class="form__label">Email</label>
+                            </div>
+                            <div class="form__group">
+                                <textarea name="text" class="form__textarea" placeholder="Message" id="message"></textarea>
+                            </div>
+                            <div class="form__group u-center-text u-margin-top-medium">
+                                <input type="submit" value="Send" class="button__primary button__white"/>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+            <!-- <div class="footer__logo-box"> -->
+                <!-- <picture class="footer__logo">
+                    <source srcset="img/place-holder.png 1x, img/place-holder.png 2x" media="(max-width: 37.5em)">
+                    <img srcset="img/place-holder.png 1x, img/place-holder.png 2x" alt="Full logo" class="footer__logo" src="img/place-holder.png">
+                </picture> -->
+                <img class="footer__logo" src="img/place-holder.png" alt="YC">
+            <!-- </div> -->
+            <p class="footer__copyright">
+                Copyright &copy; 2018 by Youness CHBIHI.
+            </p>
+            </div>
+        </footer>
+    <div class="popup-cours" id="popup-cours">
+        <div class="popup-cours__container">
+            <div class="popup-cours__cours">
+                Vous pouvez trouver ici mes cours et exercices que j'ai écrit lors de mes études d'ingénierie: 
+                <ul class="popup-cours__ul">
+                    <li class="popup-cours__li"><a target="_blank" href="pdf/lignes-influence.pdf" class="popup-cours__link">Lignes d'influences</a></li>
+                    <li class="popup-cours__li"><a target="_blank" href="pdf/methode-des-forces.pdf" class="popup-cours__link">Méthode des forces</a></li>
+                    <li class="popup-cours__li"><a target="_blank" href="pdf/travaux-virtuels.pdf" class="popup-cours__link">Travaux virtuels (1)</a></li>
+                    <li class="popup-cours__li"><a target="_blank" href="pdf/travaux-virtuels-2.pdf" class="popup-cours__link">Travaux virtuels (2)</a></li>
+                </ul>
+                D'autres sont à venir prochainement...
+                <img src="img/place-holder.png" alt="logo" class="popup-cours__logo">
+            </div>
+            <a href="#section-projects" class="popup-cours__close">&times;</a>
+        </div>
+    </div>
+</body>
 </html>
