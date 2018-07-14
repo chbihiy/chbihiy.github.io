@@ -1,0 +1,146 @@
+.the-logo {
+    display: block;
+    width: 700px;
+    margin: 30vh auto 20vh auto;
+}
+
+/* #the-1-path,#the-2-path,#the-3-path,#renewal-1-path,#renewal-2-path,#renewal-3-path,#renewal-4-path,#renewal-5-path,#renewal-6-path,#renewal-7-path, */
+#al-1-path,#al-2-path,#quara-1-path,#quara-2-path,#quara-3-path,#quara-4-path,#quara-5-path,#quara-6-path,#quara-7-path,#quara-8-path,#quara-9-path,
+#quara-10-path,#quara-11-path,#quara-12-path{
+    fill:white; /*fill:#1f6617;*/
+    stroke:none;
+    transform: translate(0%, -5%);
+    opacity: 0;
+    animation: fancytranslate 2s ease forwards;
+}
+#therenewal{
+   fill: black; 
+   transform: translate(-50%,-10%) scale(2);
+   animation: fillmode .5s ease forwards 2.5s;
+}
+
+#the-rectangle{
+    /* animation: 1s fillmode alternate infinite; */
+    animation: translatemode 2.4s linear infinite 2.5s;
+}
+
+@keyframes fillmode {
+    to {
+        fill: white;
+        transform: scale(1);
+    }
+}
+@keyframes translatemode {
+    30% {
+        transform: translate(-180%,-0%);
+    }
+    80% {
+        transform: translate(-190%,-0%);
+    }
+    100% {
+        transform: translate(-455%,-0%);
+    }
+}
+@keyframes fancytranslate {
+    100% {
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
+}
+#the-1-path {
+
+}
+
+#the-2-path {
+    
+}
+
+#the-3-path {
+    
+}
+
+#renewal-1-path{
+
+}
+
+#renewal-2-path{
+    
+}
+
+#renewal-3-path{
+    
+}
+
+#renewal-4-path{
+    
+}
+
+#renewal-5-path{
+    
+}
+
+#renewal-6-path{
+    
+}
+
+#renewal-7-path{
+    
+}
+.my-var{
+    --my-below: 3s;
+}
+#al-1-path{
+    animation-delay: .1s;
+}
+
+#al-2-path{
+    animation-delay: .2s;
+}
+
+#quara-1-path{
+    animation-delay: .3s;
+}
+
+#quara-2-path{
+    animation-delay: .4s;
+}
+
+#quara-3-path{
+    animation-delay:  .5s;    
+}
+
+#quara-4-path{
+    animation-delay:  .6s;
+}
+
+#quara-5-path{
+    animation-delay:  .7s;
+}
+
+#quara-6-path{
+    animation-delay:  .8s;
+}
+
+#quara-7-path{
+    animation-delay:  .9s;
+}
+
+#quara-8-path{
+    animation-delay: 1s;
+}
+
+#quara-9-path{
+    animation-delay:  1.1s;
+}
+
+#quara-10-path{
+    animation-delay:  1.2s;
+}
+
+#quara-11-path{
+    animation-delay:  1.3s;
+}
+
+#quara-12-path{
+    animation-delay:  1.4s;
+}
