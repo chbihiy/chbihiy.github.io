@@ -21,34 +21,59 @@
   stroke: none;
   transform: translate(0%, -5%);
   opacity: 0;
-  animation: fancytranslate 2s ease forwards; }
+  animation: fancytranslate 6s ease infinite; }
 
 #therenewal {
   fill: black;
-  transform: translate(-50%, -10%) scale(2.3);
-  animation: fillmode .5s ease forwards 2.5s; }
+  transform: translate(-50%, -10%) scale(2);
+  animation: fillmode 6s ease infinite; }
 
 #the-rectangle {
   stroke: none;
-  animation: translatemode 2.4s linear 2.5s; }
+  animation: translatemode 6s linear infinite; }
 
 @keyframes fillmode {
-  to {
+  30% {
+    fill: black;
+    transform: translate(-50%, -10%) scale(2); }
+  40% {
     fill: white;
-    transform: scale(1); } }
+    transform: scale(1); }
+  80% {
+    fill: white;
+    transform: scale(1); }
+  90% {
+    fill: black;
+    transform: translate(-50%, -10%) scale(2); }
+  100% {
+    fill: black;
+    transform: translate(-50%, -10%) scale(2); } }
 
 @keyframes translatemode {
-  30% {
+  25% {
+    transform: translate(0%, 0%); }
+  45% {
     transform: translate(-180%, 0%); }
-  80% {
+  60% {
     transform: translate(-190%, 0%); }
+  70% {
+    transform: translate(-480%, 0%); }
   100% {
-    transform: translate(-455%, 0%); } }
+    transform: translate(-480%, 0%); } }
 
 @keyframes fancytranslate {
-  100% {
+  20% {
     transform: translate(0%, 0%);
-    opacity: 1; } }
+    opacity: 1; }
+  70% {
+    transform: translate(0%, 0%);
+    opacity: 1; }
+  85% {
+    transform: translate(0%, -5%);
+    opacity: 0; }
+  100% {
+    transform: translate(0%, -5%);
+    opacity: 0; } }
 
 #al-1-path {
   animation-delay: 0.1s; }
