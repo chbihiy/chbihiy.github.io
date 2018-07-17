@@ -7,20 +7,21 @@
 svg {
     display: block;
     margin: auto;
+    height: 100vh;
 }
 
 .red-blop-3{
-    animation: blink-red 1.5s ease 2.3s;
+    animation: blink-red 1.5s ease 2.3s infinite;
 }
 .green-blop-3{
-    animation: blink-green 1.5s ease 2.3s;
+    animation: blink-green 1.5s ease 2.3s infinite;
 }
 
 .red-blop-stroke{
-    animation: stroke-red 1.5s ease 2.3s;
+    animation: stroke-red 1.5s ease 2.3s infinite;
 }
 .green-blop-stroke{
-    animation: stroke-green 1.5s ease 2.3s;
+    animation: stroke-green 1.5s ease 2.3s infinite;
 }
 
 #green-path {
