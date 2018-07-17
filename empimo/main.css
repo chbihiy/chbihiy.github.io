@@ -1,0 +1,178 @@
+#throne {
+    transform-origin: 50% 68.5%;
+    transform: rotate(20deg);
+    opacity: 0;
+    animation: rotatethrone 2s forwards, appear 1s forwards;
+}
+svg {
+    display: block;
+    margin: auto;
+}
+
+.red-blop-3{
+    animation: blink-red 1.5s ease 2.3s;
+}
+.green-blop-3{
+    animation: blink-green 1.5s ease 2.3s;
+}
+
+.red-blop-stroke{
+    animation: stroke-red 1.5s ease 2.3s;
+}
+.green-blop-stroke{
+    animation: stroke-green 1.5s ease 2.3s;
+}
+
+#green-path {
+    fill:#61b72f;
+    stroke: none;
+    transform-origin: 50% 68.5%;
+    transform: rotate(720deg);
+    opacity: 0;
+    animation: rotatecircle 1.5s ease forwards;
+}
+#yellow-path {
+    fill:#f4f12b;
+    stroke:none;
+    transform-origin: 50% 68.5%;
+    transform: rotate(720deg);
+    opacity: 0;
+    animation: rotatecircle 1.5s ease forwards;
+}
+
+ #black-stroke-b {
+    fill:none;
+    stroke:#000000;
+    stroke-width:4.762;
+    stroke-dasharray: 25;
+    stroke-dashoffset: -25;
+    animation: stroke 2s ease forwards 1s;
+ }
+
+ #black-stroke-u {
+    fill:none;
+    stroke:#000000;
+    stroke-width:4.762;
+    stroke-dasharray: 25;
+    stroke-dashoffset: 25;
+    animation: stroke 2s ease forwards 1s;
+ }
+
+ #blue-stroke{
+    fill:none;
+    stroke:#0093dd;
+    stroke-width:4.762;
+    stroke-dasharray: 70;
+    stroke-dashoffset: -70;
+    animation: stroke 2s ease forwards 1s;
+ }
+
+ #red-stroke{
+    fill:none;
+    stroke:#d92624;
+    stroke-width:4.762;
+    stroke-dasharray: 70;
+    stroke-dashoffset: -70;
+    animation: stroke 2s ease forwards 1s;
+ }
+
+#white-blue-stroke {
+   fill:none;
+   stroke:#ffffff;
+   stroke-width:6.862;
+}
+
+#white-red-stroke {
+    fill:none;
+    stroke:#ffffff;
+    stroke-width:6.862;
+ }
+
+ #white-black-stroke{
+    fill:none;
+    stroke:#ffffff;
+    stroke-width:6.862;
+ }
+
+@keyframes stroke{
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes rotatecircle {
+    to {
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes appear {
+    to {
+        opacity: 1;
+    }
+}
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes blink-red {
+    0%{
+        fill: #e95358;
+    }
+    50%{
+        fill: #fd7c7e;
+    }
+    100%{
+        fill: #e95358;
+    }
+}
+@keyframes blink-green {
+    0%{
+        fill: #007e5d;
+    }
+    50%{
+        fill: #00b887;
+    }
+    100%{
+        fill: #007e5d;
+    }
+}
+@keyframes stroke-red {
+    0%{
+        stroke: #8b1116;
+    }
+    50%{
+        stroke: #fd7c7e;
+    }
+    100%{
+        stroke: #8b1116;
+    }
+}
+@keyframes stroke-green {
+    0%{
+        stroke: #002e22;
+    }
+    50%{
+        stroke: #00b887;
+    }
+    100%{
+        stroke: #002e22;
+    }
+}
+@keyframes rotatethrone {
+    50% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
