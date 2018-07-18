@@ -7,7 +7,8 @@
 svg {
     display: block;
     margin: auto;
-    height: 100vh;
+    max-height: 100vh;
+    max-width: 100vw;
 }
 
 .red-blop-3{
